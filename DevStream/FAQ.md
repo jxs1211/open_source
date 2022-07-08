@@ -19,3 +19,10 @@ type RepositoryContentFileOptions struct {
 	Committer *CommitAuthor `json:"committer,omitempty"`
 }
 ```
+
+```go
+import (
+    . "github.com/devstream-io/devstream/internal/pkg/plugin/common/helm"
+    _ "github.com/devstream-io/devstream/internal/pkg/plugin/common/helm"
+)
+```

@@ -667,11 +667,18 @@ Signed-off-by: Daniel Hu <tao.hu@merico.dev>
 
 这时候我们可以同时修改 commit message，如果不需要，那就直接保存退出好了，签名信息是会自动加上的。
 
+
+提交代码前，保险起见，可以fetch主干
+```sh
+git fetch upstream && git checkout feat-xxx && git rebase upstream/main
+```
+
 完成签名后呢？当然是来一个强制 push 了：
 
 ```
 git push -f origin feat-xxx
 ```
+
 
 这样，你 PR 中的 DCO 报错就自然修复了。
 
